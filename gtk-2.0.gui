@@ -697,7 +697,7 @@
 @GtkLabel -> GtkMisc {
 	@ChildProp("angle", Number)
 	@ChildProp("cursor-position", Number)
-	@ChildProp("label", String)
+	@ChildArg("label", String)
 	@ChildProp("max-width-chars", Number)
 	@ChildProp("mnemonic-keyval", Number)
 	@ChildProp("pattern", String)

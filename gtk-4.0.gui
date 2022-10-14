@@ -957,7 +957,7 @@
 	@ChildProp("yalign", Number)
 }
 @GtkLabel -> GtkWidget {
-	@ChildProp("label", String)
+	@ChildArg("label", String)
 	@ChildProp("lines", Number)
 	@ChildProp("max-width-chars", Number)
 	@ChildProp("mnemonic-keyval", Number)

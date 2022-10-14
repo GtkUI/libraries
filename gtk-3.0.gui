@@ -589,6 +589,7 @@
 	@ChildProp("ui", String)
 }
 @GtkWidget {
+  @InlineProp("id", String)
 	@ChildProp("app-paintable", Bool)
 	@ChildProp("can-default", Bool)
 	@ChildProp("can-focus", Bool)

@@ -690,6 +690,7 @@
 	@ChildProp("x-offset", Number)
 }
 @GtkWidget {
+  @InlineProp("id", String)
 	@ChildProp("can-focus", Bool)
 	@ChildProp("can-target", Bool)
 	@ChildProp("css-name", String)

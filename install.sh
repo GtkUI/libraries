@@ -1,6 +1,6 @@
 #!/bin/sh
 
-INSTALL_DIR="/usr/share/gtkui/"
+INSTALL_DIR="/usr/share/gtk-ui/"
 
 error() {
   printf " Failed.\n"

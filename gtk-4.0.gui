@@ -1,6 +1,9 @@
 #header "<requires lib=\"gtk\" version=\"4.0\"/>"
 
 @GtkATContext {
+	@ChildProp("accessible", String)
+	@ChildProp("accessible-role", String)
+	@ChildProp("display", String)
 }
 @GtkAdjustment {
 	@ChildProp("lower", Number)
@@ -11,11 +14,15 @@
 	@ChildProp("value", Number)
 }
 @GtkApplication {
+	@ChildProp("active-window", String)
+	@ChildProp("menubar", String)
 	@ChildProp("register-session", Bool)
 	@ChildProp("screensaver-active", Bool)
 }
 @GtkAssistantPage {
+	@ChildProp("child", String)
 	@ChildProp("complete", Bool)
+	@ChildProp("page-type", String)
 	@ChildProp("title", String)
 }
 @GtkBookmarkList {
@@ -26,16 +33,22 @@
 	@ChildProp("n-items", Number)
 }
 @GtkBuilder {
+	@ChildProp("current-object", String)
+	@ChildProp("scope", String)
 	@ChildProp("translation-domain", String)
 }
 @GtkBuilderCScope {
 }
 @GtkCellArea {
+	@ChildProp("edit-widget", String)
+	@ChildProp("edited-cell", String)
+	@ChildProp("focus-cell", String)
 }
 @GtkCellAreaBox -> GtkCellArea {
 	@ChildProp("spacing", Number)
 }
 @GtkCellAreaContext {
+	@ChildProp("area", String)
 	@ChildProp("minimum-height", Number)
 	@ChildProp("minimum-width", Number)
 	@ChildProp("natural-height", Number)
@@ -43,11 +56,13 @@
 }
 @GtkCellRenderer {
 	@ChildProp("cell-background", String)
+	@ChildProp("cell-background-rgba", String)
 	@ChildProp("cell-background-set", Bool)
 	@ChildProp("editing", Bool)
 	@ChildProp("height", Number)
 	@ChildProp("is-expanded", Bool)
 	@ChildProp("is-expander", Bool)
+	@ChildProp("mode", String)
 	@ChildProp("sensitive", Bool)
 	@ChildProp("visible", Bool)
 	@ChildProp("width", Number)
@@ -57,7 +72,13 @@
 	@ChildProp("ypad", Number)
 }
 @GtkCellRendererPixbuf -> GtkCellRenderer {
+	@ChildProp("gicon", String)
 	@ChildProp("icon-name", String)
+	@ChildProp("icon-size", String)
+	@ChildProp("pixbuf", String)
+	@ChildProp("pixbuf-expander-closed", String)
+	@ChildProp("pixbuf-expander-open", String)
+	@ChildProp("texture", String)
 }
 @GtkCellRendererProgress -> GtkCellRenderer {
 	@ChildProp("inverted", Bool)
@@ -70,18 +91,25 @@
 @GtkCellRendererSpinner -> GtkCellRenderer {
 	@ChildProp("active", Bool)
 	@ChildProp("pulse", Number)
+	@ChildProp("size", String)
 }
 @GtkCellRendererText -> GtkCellRenderer {
 	@ChildProp("align-set", Bool)
+	@ChildProp("alignment", String)
+	@ChildProp("attributes", String)
 	@ChildProp("background", String)
+	@ChildProp("background-rgba", String)
 	@ChildProp("background-set", Bool)
 	@ChildProp("editable", Bool)
 	@ChildProp("editable-set", Bool)
+	@ChildProp("ellipsize", String)
 	@ChildProp("ellipsize-set", Bool)
 	@ChildProp("family", String)
 	@ChildProp("family-set", Bool)
 	@ChildProp("font", String)
+	@ChildProp("font-desc", String)
 	@ChildProp("foreground", String)
+	@ChildProp("foreground-rgba", String)
 	@ChildProp("foreground-set", Bool)
 	@ChildProp("language", String)
 	@ChildProp("language-set", Bool)
@@ -690,7 +718,7 @@
 	@ChildProp("x-offset", Number)
 }
 @GtkWidget {
-  @InlineProp("id", String)
+	@InlineProp("id", String)
 	@ChildProp("can-focus", Bool)
 	@ChildProp("can-target", Bool)
 	@ChildProp("css-name", String)

@@ -43,11 +43,11 @@
 	@ChildProp("edit-widget", String)
 	@ChildProp("edited-cell", String)
 	@ChildProp("focus-cell", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkCellAreaBox -> GtkCellArea {
 	@ChildProp("spacing", Number)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 	@ChildProp("orientation", String)
 }
 @GtkCellAreaContext {
@@ -226,7 +226,7 @@
 	@ChildProp("popup-set-width", Bool)
 	@ChildProp("popup-single-match", Bool)
 	@ChildProp("text-column", Number)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkEventController {
 	@ChildProp("name", String)
@@ -305,7 +305,7 @@
 	@ChildProp("model", String)
 	@ChildProp("n-items", Number)
 	@ChildProp("scope", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkExpression {
 }
@@ -329,17 +329,17 @@
 }
 @GtkFileFilter -> GtkFilter {
 	@ChildProp("name", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkMultiFilter -> GtkFilter {
 	@ChildProp("n-items", Number)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkAnyFilter -> GtkMultiFilter {
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkEveryFilter -> GtkMultiFilter {
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkStringFilter -> GtkFilter {
 	@ChildProp("expression", String)
@@ -407,7 +407,7 @@
 @GtkCenterLayout -> GtkLayoutManager {
 }
 @GtkConstraintLayout -> GtkLayoutManager {
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkCustomLayout -> GtkLayoutManager {
 }
@@ -440,7 +440,7 @@
 @GtkSignalListItemFactory -> GtkListItemFactory {
 }
 @GtkListStore {
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkMapListModel {
 	@ChildProp("has-map", Bool)
@@ -652,7 +652,7 @@
 }
 @GtkSizeGroup {
 	@ChildProp("mode", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkSliceListModel {
 	@ChildProp("model", String)
@@ -675,7 +675,7 @@
 }
 @GtkMultiSorter -> GtkSorter {
 	@ChildProp("n-items", Number)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkNumericSorter -> GtkSorter {
 	@ChildProp("expression", String)
@@ -698,7 +698,7 @@
 	@ChildProp("visible", Bool)
 }
 @GtkStringList {
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkStringObject {
 	@ChildProp("string", String)
@@ -813,7 +813,7 @@
 	@ChildProp("wrap-mode-set", Bool)
 }
 @GtkTextTagTable {
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkTooltip {
 }
@@ -841,7 +841,7 @@
 	@ChildProp("mode", String)
 }
 @GtkTreeStore {
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkTreeViewColumn {
 	@ChildProp("alignment", Number)
@@ -863,7 +863,7 @@
 	@ChildProp("widget", String)
 	@ChildProp("width", Number)
 	@ChildProp("x-offset", Number)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkWidget {
 	@ChildProp("can-focus", Bool)
@@ -899,18 +899,18 @@
 	@ChildProp("vexpand-set", Bool)
 	@ChildProp("visible", Bool)
 	@ChildProp("width-request", Number)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkActionBar -> GtkWidget {
 	@ChildProp("revealed", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkAppChooserButton -> GtkWidget {
 	@ChildProp("heading", String)
 	@ChildProp("modal", Bool)
 	@ChildProp("show-default-item", Bool)
 	@ChildProp("show-dialog-item", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkAppChooserWidget -> GtkWidget {
 	@ChildProp("default-text", String)
@@ -919,7 +919,7 @@
 	@ChildProp("show-fallback", Bool)
 	@ChildProp("show-other", Bool)
 	@ChildProp("show-recommended", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkAspectFrame -> GtkWidget {
 	@ChildProp("child", String)
@@ -927,13 +927,13 @@
 	@ChildProp("ratio", Number)
 	@ChildProp("xalign", Number)
 	@ChildProp("yalign", Number)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkBox -> GtkWidget {
 	@ChildProp("baseline-position", String)
 	@ChildProp("homogeneous", Bool)
 	@ChildProp("spacing", Number)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 	@ChildProp("orientation", String)
 }
 @GtkShortcutsGroup -> GtkBox {
@@ -942,7 +942,7 @@
 	@ChildProp("title", String)
 	@ChildProp("title-size-group", String)
 	@ChildProp("view", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 	@ChildProp("orientation", String)
 }
 @GtkShortcutsSection -> GtkBox {
@@ -950,7 +950,7 @@
 	@ChildProp("section-name", String)
 	@ChildProp("title", String)
 	@ChildProp("view-name", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 	@ChildProp("orientation", String)
 }
 @GtkButton -> GtkWidget {
@@ -959,12 +959,12 @@
 	@ChildProp("icon-name", String)
 	@ChildProp("label", String)
 	@ChildProp("use-underline", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkLinkButton -> GtkButton {
 	@ChildProp("uri", String)
 	@ChildProp("visited", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkLockButton -> GtkButton {
 	@ChildProp("permission", String)
@@ -973,12 +973,12 @@
 	@ChildProp("tooltip-lock", String)
 	@ChildProp("tooltip-not-authorized", String)
 	@ChildProp("tooltip-unlock", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkToggleButton -> GtkButton {
 	@ChildProp("active", Bool)
 	@ChildProp("group", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkCalendar -> GtkWidget {
 	@ChildProp("day", Number)
@@ -987,7 +987,7 @@
 	@ChildProp("show-heading", Bool)
 	@ChildProp("show-week-numbers", Bool)
 	@ChildProp("year", Number)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkCellView -> GtkWidget {
 	@ChildProp("cell-area", String)
@@ -995,12 +995,12 @@
 	@ChildProp("draw-sensitive", Bool)
 	@ChildProp("fit-model", Bool)
 	@ChildProp("model", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 	@ChildProp("orientation", String)
 }
 @GtkCenterBox -> GtkWidget {
 	@ChildProp("baseline-position", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 	@ChildProp("orientation", String)
 }
 @GtkCheckButton -> GtkWidget {
@@ -1010,17 +1010,17 @@
 	@ChildProp("inconsistent", Bool)
 	@ChildProp("label", String)
 	@ChildProp("use-underline", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkColorButton -> GtkWidget {
 	@ChildProp("modal", Bool)
 	@ChildProp("show-editor", Bool)
 	@ChildProp("title", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkColorChooserWidget -> GtkWidget {
 	@ChildProp("show-editor", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkColumnView -> GtkWidget {
 	@ChildProp("columns", String)
@@ -1031,7 +1031,7 @@
 	@ChildProp("show-row-separators", Bool)
 	@ChildProp("single-click-activate", Bool)
 	@ChildProp("sorter", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkComboBox -> GtkWidget {
 	@ChildProp("active", Number)
@@ -1045,19 +1045,19 @@
 	@ChildProp("model", String)
 	@ChildProp("popup-fixed-width", Bool)
 	@ChildProp("popup-shown", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkComboBoxText -> GtkComboBox {
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkDragIcon -> GtkWidget {
 	@ChildProp("child", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkDrawingArea -> GtkWidget {
 	@ChildProp("content-height", Number)
 	@ChildProp("content-width", Number)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkDropDown -> GtkWidget {
 	@ChildProp("enable-search", Bool)
@@ -1068,11 +1068,11 @@
 	@ChildProp("selected", Number)
 	@ChildProp("selected-item", String)
 	@ChildProp("show-arrow", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkEditableLabel -> GtkWidget {
 	@ChildProp("editing", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkEntry -> GtkWidget {
 	@ChildProp("activates-default", Bool)
@@ -1114,7 +1114,7 @@
 	@ChildProp("text-length", Number)
 	@ChildProp("truncate-multiline", Bool)
 	@ChildProp("visibility", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkExpander -> GtkWidget {
 	@ChildProp("child", String)
@@ -1124,15 +1124,15 @@
 	@ChildProp("resize-toplevel", Bool)
 	@ChildProp("use-markup", Bool)
 	@ChildProp("use-underline", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkFileChooserWidget -> GtkWidget {
 	@ChildProp("search-mode", Bool)
 	@ChildProp("subtitle", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkFixed -> GtkWidget {
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkFlowBox -> GtkWidget {
 	@ChildProp("accept-unpaired-release", Bool)
@@ -1143,30 +1143,30 @@
 	@ChildProp("min-children-per-line", Number)
 	@ChildProp("row-spacing", Number)
 	@ChildProp("selection-mode", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 	@ChildProp("orientation", String)
 }
 @GtkFlowBoxChild -> GtkWidget {
 	@ChildProp("child", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkFontButton -> GtkWidget {
 	@ChildProp("modal", Bool)
 	@ChildProp("title", String)
 	@ChildProp("use-font", Bool)
 	@ChildProp("use-size", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkFontChooserWidget -> GtkWidget {
 	@ChildProp("tweak-action", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkFrame -> GtkWidget {
 	@ChildProp("child", String)
 	@ChildProp("label", String)
 	@ChildProp("label-widget", String)
 	@ChildProp("label-xalign", Number)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkGLArea -> GtkWidget {
 	@ChildProp("auto-render", Bool)
@@ -1174,7 +1174,7 @@
 	@ChildProp("has-depth-buffer", Bool)
 	@ChildProp("has-stencil-buffer", Bool)
 	@ChildProp("use-es", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkGrid -> GtkWidget {
 	@ChildProp("baseline-row", Number)
@@ -1182,14 +1182,14 @@
 	@ChildProp("column-spacing", Number)
 	@ChildProp("row-homogeneous", Bool)
 	@ChildProp("row-spacing", Number)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 	@ChildProp("orientation", String)
 }
 @GtkHeaderBar -> GtkWidget {
 	@ChildProp("decoration-layout", String)
 	@ChildProp("show-title-buttons", Bool)
 	@ChildProp("title-widget", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkIconView -> GtkWidget {
 	@ChildProp("activate-on-single-click", Bool)
@@ -1209,7 +1209,7 @@
 	@ChildProp("spacing", Number)
 	@ChildProp("text-column", Number)
 	@ChildProp("tooltip-column", Number)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkImage -> GtkWidget {
 	@ChildProp("file", String)
@@ -1221,13 +1221,13 @@
 	@ChildProp("resource", String)
 	@ChildProp("storage-type", String)
 	@ChildProp("use-fallback", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkInfoBar -> GtkWidget {
 	@ChildProp("message-type", String)
 	@ChildProp("revealed", Bool)
 	@ChildProp("show-close-button", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkInscription -> GtkWidget {
 	@ChildProp("attributes", String)
@@ -1241,7 +1241,7 @@
 	@ChildProp("wrap-mode", String)
 	@ChildProp("xalign", Number)
 	@ChildProp("yalign", Number)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkLabel -> GtkWidget {
 	@ChildProp("attributes", String)
@@ -1264,7 +1264,7 @@
 	@ChildProp("wrap-mode", String)
 	@ChildProp("xalign", Number)
 	@ChildProp("yalign", Number)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkLevelBar -> GtkWidget {
 	@ChildProp("inverted", Bool)
@@ -1272,12 +1272,12 @@
 	@ChildProp("min-value", Number)
 	@ChildProp("mode", String)
 	@ChildProp("value", Number)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 	@ChildProp("orientation", String)
 }
 @GtkListBase -> GtkWidget {
 	@ChildProp("orientation", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 	@ChildProp("orientation", String)
 }
 @GtkGridView -> GtkListBase {
@@ -1287,7 +1287,7 @@
 	@ChildProp("min-columns", Number)
 	@ChildProp("model", String)
 	@ChildProp("single-click-activate", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 	@ChildProp("orientation", String)
 }
 @GtkListView -> GtkListBase {
@@ -1296,7 +1296,7 @@
 	@ChildProp("model", String)
 	@ChildProp("show-separators", Bool)
 	@ChildProp("single-click-activate", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 	@ChildProp("orientation", String)
 }
 @GtkListBox -> GtkWidget {
@@ -1304,17 +1304,17 @@
 	@ChildProp("activate-on-single-click", Bool)
 	@ChildProp("selection-mode", String)
 	@ChildProp("show-separators", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkListBoxRow -> GtkWidget {
 	@ChildProp("activatable", Bool)
 	@ChildProp("child", String)
 	@ChildProp("selectable", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkMediaControls -> GtkWidget {
 	@ChildProp("media-stream", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkMenuButton -> GtkWidget {
 	@ChildProp("always-show-arrow", Bool)
@@ -1327,7 +1327,7 @@
 	@ChildProp("popover", String)
 	@ChildProp("primary", Bool)
 	@ChildProp("use-underline", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkNotebook -> GtkWidget {
 	@ChildProp("enable-popup", Bool)
@@ -1338,11 +1338,11 @@
 	@ChildProp("show-border", Bool)
 	@ChildProp("show-tabs", Bool)
 	@ChildProp("tab-pos", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkOverlay -> GtkWidget {
 	@ChildProp("child", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkPaned -> GtkWidget {
 	@ChildProp("end-child", String)
@@ -1356,7 +1356,7 @@
 	@ChildProp("shrink-start-child", Bool)
 	@ChildProp("start-child", String)
 	@ChildProp("wide-handle", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 	@ChildProp("orientation", String)
 }
 @GtkPasswordEntry -> GtkWidget {
@@ -1364,7 +1364,7 @@
 	@ChildProp("extra-menu", String)
 	@ChildProp("placeholder-text", String)
 	@ChildProp("show-peek-icon", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkPicture -> GtkWidget {
 	@ChildProp("alternative-text", String)
@@ -1373,7 +1373,7 @@
 	@ChildProp("file", String)
 	@ChildProp("keep-aspect-ratio", Bool)
 	@ChildProp("paintable", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkPopover -> GtkWidget {
 	@ChildProp("autohide", Bool)
@@ -1384,19 +1384,19 @@
 	@ChildProp("mnemonics-visible", Bool)
 	@ChildProp("pointing-to", String)
 	@ChildProp("position", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkEmojiChooser -> GtkPopover {
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkPopoverMenu -> GtkPopover {
 	@ChildProp("menu-model", String)
 	@ChildProp("visible-submenu", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkPopoverMenuBar -> GtkWidget {
 	@ChildProp("menu-model", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkProgressBar -> GtkWidget {
 	@ChildProp("ellipsize", String)
@@ -1405,7 +1405,7 @@
 	@ChildProp("pulse-step", Number)
 	@ChildProp("show-text", Bool)
 	@ChildProp("text", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 	@ChildProp("orientation", String)
 }
 @GtkRange -> GtkWidget {
@@ -1415,7 +1415,7 @@
 	@ChildProp("restrict-to-fill-level", Bool)
 	@ChildProp("round-digits", Number)
 	@ChildProp("show-fill-level", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 	@ChildProp("orientation", String)
 }
 @GtkScale -> GtkRange {
@@ -1423,7 +1423,7 @@
 	@ChildProp("draw-value", Bool)
 	@ChildProp("has-origin", Bool)
 	@ChildProp("value-pos", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 	@ChildProp("orientation", String)
 }
 @GtkRevealer -> GtkWidget {
@@ -1432,22 +1432,22 @@
 	@ChildProp("reveal-child", Bool)
 	@ChildProp("transition-duration", Number)
 	@ChildProp("transition-type", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkScaleButton -> GtkWidget {
 	@ChildProp("adjustment", String)
 	@ChildProp("value", Number)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 	@ChildProp("orientation", String)
 }
 @GtkVolumeButton -> GtkScaleButton {
 	@ChildProp("use-symbolic", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 	@ChildProp("orientation", String)
 }
 @GtkScrollbar -> GtkWidget {
 	@ChildProp("adjustment", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 	@ChildProp("orientation", String)
 }
 @GtkScrolledWindow -> GtkWidget {
@@ -1466,29 +1466,29 @@
 	@ChildProp("vadjustment", String)
 	@ChildProp("vscrollbar-policy", String)
 	@ChildProp("window-placement", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkSearchBar -> GtkWidget {
 	@ChildProp("child", String)
 	@ChildProp("key-capture-widget", String)
 	@ChildProp("search-mode-enabled", Bool)
 	@ChildProp("show-close-button", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkSearchEntry -> GtkWidget {
 	@ChildProp("activates-default", Bool)
 	@ChildProp("placeholder-text", String)
 	@ChildProp("search-delay", Number)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkSeparator -> GtkWidget {
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 	@ChildProp("orientation", String)
 }
 @GtkShortcutLabel -> GtkWidget {
 	@ChildProp("accelerator", String)
 	@ChildProp("disabled-text", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkShortcutsShortcut -> GtkWidget {
 	@ChildProp("accel-size-group", String)
@@ -1502,7 +1502,7 @@
 	@ChildProp("subtitle-set", Bool)
 	@ChildProp("title", String)
 	@ChildProp("title-size-group", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkSpinButton -> GtkWidget {
 	@ChildProp("adjustment", String)
@@ -1513,12 +1513,12 @@
 	@ChildProp("update-policy", String)
 	@ChildProp("value", Number)
 	@ChildProp("wrap", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 	@ChildProp("orientation", String)
 }
 @GtkSpinner -> GtkWidget {
 	@ChildProp("spinning", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkStack -> GtkWidget {
 	@ChildProp("hhomogeneous", Bool)
@@ -1530,24 +1530,24 @@
 	@ChildProp("vhomogeneous", Bool)
 	@ChildProp("visible-child", String)
 	@ChildProp("visible-child-name", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkStackSidebar -> GtkWidget {
 	@ChildProp("stack", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkStackSwitcher -> GtkWidget {
 	@ChildProp("stack", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 	@ChildProp("orientation", String)
 }
 @GtkStatusbar -> GtkWidget {
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkSwitch -> GtkWidget {
 	@ChildProp("active", Bool)
 	@ChildProp("state", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkText -> GtkWidget {
 	@ChildProp("activates-default", Bool)
@@ -1568,7 +1568,7 @@
 	@ChildProp("tabs", String)
 	@ChildProp("truncate-multiline", Bool)
 	@ChildProp("visibility", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkTextView -> GtkWidget {
 	@ChildProp("accepts-tab", Bool)
@@ -1592,14 +1592,14 @@
 	@ChildProp("tabs", String)
 	@ChildProp("top-margin", Number)
 	@ChildProp("wrap-mode", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkTreeExpander -> GtkWidget {
 	@ChildProp("child", String)
 	@ChildProp("indent-for-icon", Bool)
 	@ChildProp("item", String)
 	@ChildProp("list-row", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkTreeView -> GtkWidget {
 	@ChildProp("activate-on-single-click", Bool)
@@ -1619,19 +1619,19 @@
 	@ChildProp("search-column", Number)
 	@ChildProp("show-expanders", Bool)
 	@ChildProp("tooltip-column", Number)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkVideo -> GtkWidget {
 	@ChildProp("autoplay", Bool)
 	@ChildProp("file", String)
 	@ChildProp("loop", Bool)
 	@ChildProp("media-stream", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkViewport -> GtkWidget {
 	@ChildProp("child", String)
 	@ChildProp("scroll-to-focus", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkWindow -> GtkWidget {
 	@ChildProp("application", String)
@@ -1658,7 +1658,7 @@
 	@ChildProp("title", String)
 	@ChildProp("titlebar", String)
 	@ChildProp("transient-for", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkAboutDialog -> GtkWindow {
 	@ChildProp("comments", String)
@@ -1674,35 +1674,35 @@
 	@ChildProp("website", String)
 	@ChildProp("website-label", String)
 	@ChildProp("wrap-license", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkApplicationWindow -> GtkWindow {
 	@ChildProp("show-menubar", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkAssistant -> GtkWindow {
 	@ChildProp("pages", String)
 	@ChildProp("use-header-bar", Number)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkDialog -> GtkWindow {
 	@ChildProp("use-header-bar", Number)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkAppChooserDialog -> GtkDialog {
 	@ChildProp("gfile", String)
 	@ChildProp("heading", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkColorChooserDialog -> GtkDialog {
 	@ChildProp("show-editor", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkFileChooserDialog -> GtkDialog {
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkFontChooserDialog -> GtkDialog {
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkMessageDialog -> GtkDialog {
 	@ChildProp("buttons", String)
@@ -1712,10 +1712,10 @@
 	@ChildProp("secondary-use-markup", Bool)
 	@ChildProp("text", String)
 	@ChildProp("use-markup", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkPageSetupUnixDialog -> GtkDialog {
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkPrintUnixDialog -> GtkDialog {
 	@ChildProp("current-page", Number)
@@ -1726,22 +1726,22 @@
 	@ChildProp("print-settings", String)
 	@ChildProp("selected-printer", String)
 	@ChildProp("support-selection", Bool)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkShortcutsWindow -> GtkWindow {
 	@ChildProp("section-name", String)
 	@ChildProp("view-name", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkWindowControls -> GtkWidget {
 	@ChildProp("decoration-layout", String)
 	@ChildProp("empty", Bool)
 	@ChildProp("side", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkWindowHandle -> GtkWidget {
 	@ChildProp("child", String)
-	@ChildProp("id", String)
+	@InlineProp("id", String)
 }
 @GtkWidgetPaintable {
 	@ChildProp("widget", String)

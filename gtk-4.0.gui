@@ -1248,7 +1248,7 @@
 	@ChildProp("ellipsize", String)
 	@ChildProp("extra-menu", String)
 	@ChildProp("justify", String)
-	@ChildProp("label", String)
+	@ChildArg("label", String)
 	@ChildProp("lines", Number)
 	@ChildProp("max-width-chars", Number)
 	@ChildProp("mnemonic-keyval", Number)

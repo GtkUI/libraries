@@ -983,7 +983,7 @@
 	@ChildProp("cursor-position", Number)
 	@ChildProp("ellipsize", String)
 	@ChildProp("justify", String)
-	@ChildProp("label", String)
+	@ChildArg("label", String)
 	@ChildProp("max-width-chars", Number)
 	@ChildProp("mnemonic-keyval", Number)
 	@ChildProp("mnemonic-widget", String)

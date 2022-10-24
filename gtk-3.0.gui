@@ -1690,7 +1690,7 @@
 	@ChildProp("cursor-position", Number)
 	@ChildProp("ellipsize", String)
 	@ChildProp("justify", String)
-	@ChildProp("label", String)
+	@ChildArg("label", String)
 	@ChildProp("lines", Number)
 	@ChildProp("max-width-chars", Number)
 	@ChildProp("mnemonic-keyval", Number)
